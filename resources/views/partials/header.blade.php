@@ -3,35 +3,60 @@
         [
             'url' => '/',
             'label' => 'Home',
-            'active' => true,
         ],
         [
-            'url' => '/chi-siamo',
-            'label' => 'Chi siamo',
-            'active' => true,
+            'url' => '/characters',
+            'label' => 'characters',
         ],
         [
-            'url' => '/contatti',
-            'label' => 'Contatti',
-            'active' => false,
+            'url' => '/comics',
+            'label' => 'comics',
+        ],
+        
+        [
+            'url' => '/movies',
+            'label' => 'movies',  
+        ],
+        [
+            'url' => '/tv',
+            'label' => 'tv',  
+        ],
+        [
+            'url' => '/games',
+            'label' => 'games',
+        ],
+        [
+            'url' => '/collectibles',
+            'label' => 'collectibles',
+        ],
+        [
+            'url' => '/videos',
+            'label' => 'videos',
+        ],
+        [
+            'url' => '/fans',
+            'label' => 'fans',
+        ],
+        [
+            'url' => '/news',
+            'label' => 'news',
+        ],
+        [
+            'url' => '/shop',
+            'label' => 'shop',
         ],
     ];
 @endphp
 
-<header>
-    <nav>
-        <ul>
+<header class="row">
+    <nav class="col">
+        <ul class="d-flex align-items-center ">
+            <img src="{{ asset('images/dc-logo.png') }}" alt="">
             @foreach ($links as $link)
                 <li>
-                    @if ($link['active'])
                         <a href="{{ $link['url'] }}">
                             {{ $link['label'] }}
                         </a>
-                    @else
-                        <del>
-                            {{ $link['label'] }}
-                        </del>
-                    @endif
                 </li>
             @endforeach
         </ul>

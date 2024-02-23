@@ -7,7 +7,10 @@
     Laravel Start 1
 </h1>
 
-<h2>
-    Ciao {{ $firstName }} {{ $lastName }}
-</h2>
+@endsection
+
+@section('jumbo')
+<div class="jumbo-section">
+    
+</div>
 @endsection
