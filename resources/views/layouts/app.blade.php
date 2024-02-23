@@ -28,10 +28,12 @@
                         @yield('jumbo')
 
                     </div>
+                    @include('partials.comics-section')
 
                 </div>
 
             </div>
+            @yield('icon-section')
         </main>
 
         @include('partials.footer')

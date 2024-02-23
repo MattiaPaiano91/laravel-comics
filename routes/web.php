@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
-
+    $icons = config('icons');
     /*
         compact: crea un array associativo le cui chiavi sono le stringhe
                  che mettiamo tra le parentesi, mentre i valori di tali
@@ -38,7 +38,7 @@ Route::get('/', function () {
     */
     // dd(compact('firstName', 'lastName'));
 
-    return view('welcome',$comics);
+    return view('welcome', compact('comics'),compact('icons'));
     // return view('welcome', compact('firstName', 'lastName'));
 });
 

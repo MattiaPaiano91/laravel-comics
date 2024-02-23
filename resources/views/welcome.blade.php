@@ -2,15 +2,26 @@
 
 @section('page-title', 'Home')
 
-@section('main-content')
-<h1>
-    Laravel Start 1
-</h1>
-
-@endsection
-
 @section('jumbo')
 <div class="jumbo-section">
-    
 </div>
+    
 @endsection
+
+@section('icon-section')
+    <div class="container-fluid icon-container">
+        <div class="icon-section d-flex align-items-center ">
+            @foreach ( $icons as $icon)
+                <div class="icon-card  d-flex">
+                    <div class="icon-img">
+                        <img src="{{ asset($icon['path']) }}" alt="">
+                    </div>
+                    <div class="icon-text">
+                        {{ $icon['text'] }}
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+@endsection
+            
