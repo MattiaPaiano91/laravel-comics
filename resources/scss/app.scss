@@ -1,33 +1,50 @@
 @import "~bootstrap/scss/bootstrap";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
 header{
+    width: 100%;
     height: 150px;
+    margin: 0 auto;
     align-items: center;
-    ul{
-        justify-content: center;
-        li{
-            margin-left: 15px;
-            list-style: none;
-            text-transform: uppercase;
-            text-align: center;
-            a{
-                text-decoration: none;
-                color: black;
+    margin: 0px;
+    nav{
+        width: 1200px!important;
+        margin: 0px auto;
+        ul{
+            justify-content: center;
+            li{
+                margin-left: 15px;
+                list-style: none;
+                text-transform: uppercase;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
             }
         }
     }
 }
 
 .jumbo-section{
+    width: 100%;
     height: 400px;
     background-image: url('../../public/images/jumbotron.jpg');
     background-repeat: no-repeat;
-    object-fit: contain;
+    background-size: cover;
 }
 
 .comics-container{
     background-color: black;
-    padding-top: 50px;
+    padding: 50px 0px; 
     width: 100%;
     .comics-section{
         min-height: 500px;
@@ -59,7 +76,7 @@ header{
             margin: 20px auto 30px;
             width: 180px;
             height: 30px;
-            background-color: blue;
+            background-color: #0282F9;
             color: white;
             font-weight: 500;
             border: none;
@@ -69,7 +86,7 @@ header{
 
 .icon-container{
 
-    background-color: blue;
+    background-color: #0282F9;
     .icon-section {
             width: 1200px;
             margin: auto;
@@ -96,4 +113,68 @@ header{
                 margin:0px 20px;
             }
         }
+}
+
+.footer-top{
+    height: 400px;
+    background-image: url('images/footer-bg.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    .footer-content{
+        width: 1200px;
+        margin: 0 auto;
+        ul{
+            padding: 0px;
+            li:first-child{
+                list-style: none;
+                color: white;
+                font-size: 1rem;
+            }
+            a{
+                color:gray;
+                text-decoration: none;
+            }
+        }
+        
+    }
+    .dc-icon{
+        overflow: hidden;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 150%;
+        }
+    }
+}
+.footer-bottom{
+    height: 150px;
+    background-color: #303030;
+    .button-social-section{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        button {
+                width: 170px;
+                height: 50px;
+                border: 3px solid #0282F9;
+                background-color: #303030;
+                color: white;
+                font-size: large;
+                cursor: pointer;
+            }
+    }
+    li{
+        list-style: none;
+        margin-right: 15px;
+    }
+    li:first-child{
+        color: #0282F9;
+    }
 }

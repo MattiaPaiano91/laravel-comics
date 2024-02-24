@@ -10,7 +10,7 @@
 
 @section('icon-section')
     <div class="container-fluid icon-container">
-        <div class="icon-section d-flex align-items-center ">
+        <div class="icon-section d-flex justify-content-between  align-items-center ">
             @foreach ( $icons as $icon)
                 <div class="icon-card  d-flex">
                     <div class="icon-img">
