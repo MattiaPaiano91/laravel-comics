@@ -40,6 +40,7 @@ header{
     background-image: url('../../public/images/jumbotron.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .comics-container{
@@ -121,6 +122,7 @@ header{
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     .footer-content{
         width: 1200px;
         margin: 0 auto;
@@ -176,5 +178,11 @@ header{
     }
     li:first-child{
         color: #0282F9;
+    }
+}
+.error-image{
+    width: 100%;
+    img{
+        width: 100%;
     }
 }

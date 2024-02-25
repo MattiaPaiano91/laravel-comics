@@ -5,44 +5,44 @@
             'label' => 'Home',
         ],
         [
-            'url' => '/characters',
+            'url' => '/Characters',
             'label' => 'characters',
         ],
         [
-            'url' => '/comics',
+            'url' => '/Comics',
             'label' => 'comics',
         ],
         
         [
-            'url' => '/movies',
+            'url' => '/Movies',
             'label' => 'movies',  
         ],
         [
-            'url' => '/tv',
+            'url' => '/Tv',
             'label' => 'tv',  
         ],
         [
-            'url' => '/games',
+            'url' => '/Games',
             'label' => 'games',
         ],
         [
-            'url' => '/collectibles',
+            'url' => '/Collectibles',
             'label' => 'collectibles',
         ],
         [
-            'url' => '/videos',
+            'url' => '/Videos',
             'label' => 'videos',
         ],
         [
-            'url' => '/fans',
+            'url' => '/Fans',
             'label' => 'fans',
         ],
         [
-            'url' => '/news',
+            'url' => '/News',
             'label' => 'news',
         ],
         [
-            'url' => '/shop',
+            'url' => '/Shop',
             'label' => 'shop',
         ],
     ];
