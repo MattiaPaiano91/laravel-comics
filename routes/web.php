@@ -19,7 +19,7 @@ Route::get('/', function () {
     $footerLinks = config('footerLinks');
     
    
-    return view('welcome', compact('comics','icons','footerLinks'));
+    return view('Home', compact('comics','icons','footerLinks'));
 });
 
 Route::get('Characters', function () {
